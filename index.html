@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/35f7f1a442.js" crwossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              cera: ["Cera"],
+              baloo: ["Baloo 2"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>ONEFESS</title>
+  </head>
+  <body class="font-cera scroll-smooth bg-[#74C0FC]">
+    <!-- Navbar Section Start -->
+    <header>
+      <div class="flex space-x-[13rem] bg-[#146EBE]">
+        <div class="ml-3 p-4">
+          <a href="#home">
+            <div class="flex text-2xl">
+              <p class="font-bold">PPLG.ONEFESS</p>
+            </div>
+          </a>
+        </div>
+        <nav class="lg: flex divide-x-4 divide-[#74C0FC] text-center text-2xl font-bold">
+          <a href="">
+            <div class="flex items-center p-4">
+              <i class="fa-solid fa-phone mr-2"></i>
+              <p>Contact</p>
+            </div>
+          </a>
+          <a href="#about">
+            <div class="flex items-center p-4">
+              <i class="fa-solid fa-circle-info mr-2"></i>
+              <p>About</p>
+            </div>
+          </a>
+          <button>
+            <div class="flex items-center p-3">
+              <input type="text" class="mr-2 rounded-lg border-4 border-black bg-[#74C0FC] text-center font-medium placeholder:text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#74C0FC]" placeholder="Search.." />
+              <i class="fa-solid fa-magnifying-glass mr-2"></i>
+              <p>Search</p>
+            </div>
+          </button>
+          <button class="p-4">LOGIN</button>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Judul Section Start -->
+    <section id="home">
+      <div class="mt-8 flex justify-center">
+        <div class="flex flex-col">
+          <h1 class="text-center text-5xl font-bold">PPLG.ONEFESS</h1>
+          <p>Tempat Curhat Gak Jelas Yang Penting Jadi<span class="font-sans">!!</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- Judul Section End -->
+
+    <!-- Isi Curhat Section Start -->
+    <section id="curhat" class="mt-8 flex justify-center">
+      <div class="flex w-[40rem] rounded-lg border-4 border-black bg-[#146EBE]" style="box-shadow: 0 0.3rem black">
+        <form action="">
+          <div class="flex flex-col p-4">
+            <label for="judul-curhat" class="text-xl font-semibold">Curhatan</label>
+            <textarea
+              name="curhatan"
+              id="judul-curhat"
+              rows="3"
+              class="w-[37.5rem] rounded-lg border-4 border-black bg-[#74C0FC] p-3 placeholder:text-stone-800 focus:outline-none focus:ring-2 focus:ring-[#74C0FC]"
+              style="box-shadow: 0 0.3rem black"
+              placeholder="Masukan Curhatan"
+            ></textarea>
+          </div>
+
+          <div class="flex flex-col p-4">
+            <label for="dari" class="text-xl font-semibold">Curhatan Dari</label>
+            <input
+              type="text"
+              name="curhat_dari"
+              id="dari"
+              rows="3"
+              class="w-[37.5rem] rounded-lg border-4 border-black bg-[#74C0FC] p-3 placeholder:text-stone-800 focus:outline-none focus:ring-2 focus:ring-[#74C0FC]"
+              style="box-shadow: 0 0.3rem black"
+              placeholder="Curhatan Dari"
+            />
+          </div>
+          <button class="ml-4 mb-4 w-[37.5rem] rounded-md border-4 border-black bg-[#74C0FC] p-1" style="box-shadow: 0 0.3rem black"><span class="text-xl font-medium">Curhat Sekarang</span></button>
+        </form>
+      </div>
+    </section>
+    <!-- Isi Curhat Section End -->
+
+    <!-- List Curhat Section Start -->
+    <section class="mt-8 flex p-12">
+      <div class="flex flex-wrap items-start">
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#256697]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+          <p class="p-4">Dari : Asep Bensin</p>
+        </div>
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#74C0FC]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, modi. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <div class="">
+            <p class="p-4">Dari : Asep Bensin</p>
+          </div>
+        </div>
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#16619b]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, modi. Lorem, ipsum dolor</p>
+          <p class="p-4">Dari : Asep Bensin</p>
+        </div>
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#146EBE]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, modi. Lorem, ipsum dolor</p>
+          <p class="p-4">Dari : Asep Bensin</p>
+        </div>
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#476f8e]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, modi. Lorem, ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+          <p class="p-4">Dari : Asep Bensin</p>
+        </div>
+        <div class="m-1 flex h-fit w-[32%] flex-col rounded-lg border-4 border-black bg-[#085d9e]" style="box-shadow: 0 0.3rem black">
+          <p class="px-4 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+          <p class="p-4">Dari : Asep Bensin</p>
+        </div>
+      </div>
+    </section>
+    <!-- List Curhat Section End -->
+
+    <!-- Footer Start -->
+    <section class="flex flex-row items-center bg-[#183153] p-4">
+      <div class="mt-2 flex w-fit flex-col">
+        <div class="flex w-fit items-center rounded-lg bg-[#146EBE]">
+          <i class="fa-solid fa-code rounded-tl-lg rounded-bl-lg bg-white p-5 text-4xl"></i>
+          <p class="p-4 text-4xl font-bold">XI PPLG 1</p>
+        </div>
+        <p class="mt-2 flex justify-center text-xl text-white">Dibuat Oleh Ulwan Luthfi</p>
+      </div>
+      <div class="ml-48 mr-28 flex space-x-2">
+        <a target="_blank" href="https://www.instagram.com/ulwanluthfii/">
+          <div class="flex h-fit rounded-xl bg-[#74C0FC] px-4 py-3">
+            <i class="fa-brands fa-instagram text-4xl"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCe4FkxAdQVFp2VCdk3eFiWQ/featured">
+          <div class="flex h-fit rounded-xl bg-[#74C0FC] px-3 py-3">
+            <i class="fa-brands fa-youtube text-4xl"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="flex h-fit rounded-xl bg-[#74C0FC] px-3.5 py-3">
+            <i class="fa-brands fa-facebook text-4xl"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://github.com/UlwanLuthfi">
+          <div class="flex h-fit rounded-xl bg-[#74C0FC] px-4 py-3">
+            <i class="fa-brands fa-github text-4xl"></i>
+          </div>
+        </a>
+      </div>
+      <div class="rounded-xl border-4 border-black bg-[#146EBE] px-4 py-5">
+        <p class="fa-beat text-5xl">😅</p>
+      </div>
+      <div class="ml-4 rounded-xl border-4 border-black bg-[#146EBE] px-4 py-5">
+        <p class="fa-beat text-5xl">🥶</p>
+      </div>
+      <div class="ml-4 rounded-xl border-4 border-black bg-[#146EBE] px-4 py-5">
+        <p class="fa-beat text-5xl">😋</p>
+      </div>
+    </section>
+    <!-- Footer End -->
+  </body>
+</html>
